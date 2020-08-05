@@ -13,6 +13,7 @@
 		FC4BBD6824DAAB6A0006B05A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4BBD6624DAAB6A0006B05A /* Main.storyboard */; };
 		FC4BBD6A24DAAB6B0006B05A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4BBD6924DAAB6B0006B05A /* Assets.xcassets */; };
 		FC4BBD6D24DAAB6B0006B05A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4BBD6B24DAAB6B0006B05A /* LaunchScreen.storyboard */; };
+		FC4BBD7824DAAE190006B05A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BBD7724DAAE190006B05A /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FC4BBD6924DAAB6B0006B05A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC4BBD6C24DAAB6B0006B05A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4BBD6E24DAAB6B0006B05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4BBD7724DAAE190006B05A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FC4BBD5F24DAAB6A0006B05A /* MVVM-002 */ = {
 			isa = PBXGroup;
 			children = (
+				FC4BBD7624DAACD10006B05A /* Model */,
 				FC4BBD7424DAAC8F0006B05A /* View */,
 				FC4BBD7524DAAC9A0006B05A /* Controller */,
 				FC4BBD6024DAAB6A0006B05A /* AppDelegate.swift */,
@@ -81,6 +84,14 @@
 				FC4BBD6424DAAB6A0006B05A /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC4BBD7624DAACD10006B05A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BBD7724DAAE190006B05A /* Movie.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			files = (
 				FC4BBD6524DAAB6A0006B05A /* ViewController.swift in Sources */,
 				FC4BBD6124DAAB6A0006B05A /* AppDelegate.swift in Sources */,
+				FC4BBD7824DAAE190006B05A /* Movie.swift in Sources */,
 				FC4BBD6324DAAB6A0006B05A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
