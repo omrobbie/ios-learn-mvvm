@@ -56,15 +56,31 @@
 		FC4BBD5F24DAAB6A0006B05A /* MVVM-002 */ = {
 			isa = PBXGroup;
 			children = (
+				FC4BBD7424DAAC8F0006B05A /* View */,
+				FC4BBD7524DAAC9A0006B05A /* Controller */,
 				FC4BBD6024DAAB6A0006B05A /* AppDelegate.swift */,
 				FC4BBD6224DAAB6A0006B05A /* SceneDelegate.swift */,
-				FC4BBD6424DAAB6A0006B05A /* ViewController.swift */,
-				FC4BBD6624DAAB6A0006B05A /* Main.storyboard */,
 				FC4BBD6924DAAB6B0006B05A /* Assets.xcassets */,
 				FC4BBD6B24DAAB6B0006B05A /* LaunchScreen.storyboard */,
 				FC4BBD6E24DAAB6B0006B05A /* Info.plist */,
 			);
 			path = "MVVM-002";
+			sourceTree = "<group>";
+		};
+		FC4BBD7424DAAC8F0006B05A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BBD6624DAAB6A0006B05A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC4BBD7524DAAC9A0006B05A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BBD6424DAAB6A0006B05A /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
