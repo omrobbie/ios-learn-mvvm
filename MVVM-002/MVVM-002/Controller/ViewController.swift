@@ -15,10 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupList()
-
-        NetworkManager.shared.fetchMovies { (data) in
-            print(data)
-        }
     }
 
     private func setupList() {

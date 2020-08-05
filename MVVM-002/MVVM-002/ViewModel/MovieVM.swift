@@ -10,7 +10,20 @@ import Foundation
 
 class MovieVM: NSObject {
 
-    func fetchMovies(completion: () -> ()) {
+    var movies = [MovieEntry]()
 
+    var count: Int {
+        return movies.count
+    }
+
+    func fetchMovies(completion: @escaping () -> ()) {
+        NetworkManager.shared.fetchMovies { (data) in
+            self.movies = data
+            completion()
+        }
+    }
+
+    func labelAtRow(indexPath: IndexPath) -> String {
+        movies[indexPath.row].name.label
     }
 }
