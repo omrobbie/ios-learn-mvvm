@@ -15,6 +15,7 @@
 		FC4BBD6D24DAAB6B0006B05A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4BBD6B24DAAB6B0006B05A /* LaunchScreen.storyboard */; };
 		FC4BBD7824DAAE190006B05A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BBD7724DAAE190006B05A /* Movie.swift */; };
 		FC4BBD7B24DAAF9E0006B05A /* MovieVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BBD7A24DAAF9E0006B05A /* MovieVM.swift */; };
+		FC4BBD7E24DAB0020006B05A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BBD7D24DAB0020006B05A /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FC4BBD6E24DAAB6B0006B05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC4BBD7724DAAE190006B05A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		FC4BBD7A24DAAF9E0006B05A /* MovieVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVM.swift; sourceTree = "<group>"; };
+		FC4BBD7D24DAB0020006B05A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				FC4BBD7924DAAF210006B05A /* ViewModel */,
 				FC4BBD7424DAAC8F0006B05A /* View */,
 				FC4BBD7524DAAC9A0006B05A /* Controller */,
+				FC4BBD7C24DAAFE40006B05A /* Network */,
 				FC4BBD6024DAAB6A0006B05A /* AppDelegate.swift */,
 				FC4BBD6224DAAB6A0006B05A /* SceneDelegate.swift */,
 				FC4BBD6924DAAB6B0006B05A /* Assets.xcassets */,
@@ -103,6 +106,14 @@
 				FC4BBD7A24DAAF9E0006B05A /* MovieVM.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC4BBD7C24DAAFE40006B05A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BBD7D24DAB0020006B05A /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				FC4BBD6124DAAB6A0006B05A /* AppDelegate.swift in Sources */,
 				FC4BBD7824DAAE190006B05A /* Movie.swift in Sources */,
 				FC4BBD6324DAAB6A0006B05A /* SceneDelegate.swift in Sources */,
+				FC4BBD7E24DAB0020006B05A /* NetworkManager.swift in Sources */,
 				FC4BBD7B24DAAF9E0006B05A /* MovieVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
