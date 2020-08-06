@@ -15,6 +15,7 @@
 		FC5C64F824DB9B9700BE4C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5C64F624DB9B9700BE4C7B /* LaunchScreen.storyboard */; };
 		FC5C650324DB9CEE00BE4C7B /* NicePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */; };
 		FC5C650624DBA26500BE4C7B /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650524DBA26500BE4C7B /* MainVM.swift */; };
+		FC5C650924DBA37600BE4C7B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650824DBA37600BE4C7B /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FC5C64F924DB9B9700BE4C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicePlace.swift; sourceTree = "<group>"; };
 		FC5C650524DBA26500BE4C7B /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		FC5C650824DBA37600BE4C7B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				FC5C650424DBA24C00BE4C7B /* ViewModel */,
 				FC5C64FF24DB9CBB00BE4C7B /* View */,
 				FC5C650024DB9CC200BE4C7B /* Controller */,
+				FC5C650724DBA35A00BE4C7B /* Helpers */,
 				FC5C64EB24DB9B9700BE4C7B /* AppDelegate.swift */,
 				FC5C64ED24DB9B9700BE4C7B /* SceneDelegate.swift */,
 				FC5C64F424DB9B9700BE4C7B /* Assets.xcassets */,
@@ -103,6 +106,14 @@
 				FC5C650524DBA26500BE4C7B /* MainVM.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC5C650724DBA35A00BE4C7B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C650824DBA37600BE4C7B /* Observable.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				FC5C650624DBA26500BE4C7B /* MainVM.swift in Sources */,
 				FC5C64EC24DB9B9700BE4C7B /* AppDelegate.swift in Sources */,
 				FC5C650324DB9CEE00BE4C7B /* NicePlace.swift in Sources */,
+				FC5C650924DBA37600BE4C7B /* Observable.swift in Sources */,
 				FC5C64EE24DB9B9700BE4C7B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
