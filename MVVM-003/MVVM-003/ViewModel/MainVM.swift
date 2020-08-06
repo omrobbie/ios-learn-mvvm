@@ -13,6 +13,7 @@ class MainVM {
     private var repo = NicePlaceRepository.shared
 
     var data = Observable<[NicePlace]>()
+    var isLoading = Observable<Bool>(false)
 
     var count: Int {
         return data.property?.count ?? 0
@@ -28,5 +29,14 @@ class MainVM {
 
     func getImage(_ indexPath: IndexPath) -> String? {
         return data.property?[indexPath.row].imageUrl
+    }
+
+    func addNewValue(nicePlace: NicePlace) {
+        isLoading.property = true
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.data.property?.append(nicePlace)
+            self.isLoading.property = false
+        }
     }
 }

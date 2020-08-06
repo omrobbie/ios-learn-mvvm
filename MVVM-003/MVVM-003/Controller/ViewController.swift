@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupList()
         observeData()
+        observeLoading()
     }
 
     private func setupList() {
@@ -32,7 +33,18 @@ class ViewController: UIViewController {
         }
     }
 
+    private func observeLoading() {
+        viewModel.isLoading.observe = { isLoading in
+            if isLoading {
+                self.tableViewIndicator.startAnimating()
+            } else {
+                self.tableViewIndicator.stopAnimating()
+            }
+        }
+    }
+
     @IBAction func btnAddTapped(_ sender: Any) {
+        viewModel.addNewValue(nicePlace: NicePlace(title: "Add New Item", imageUrl: "lightbulb"))
     }
 }
 
