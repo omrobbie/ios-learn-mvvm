@@ -6,7 +6,7 @@
 //  Copyright © 2020 omrobbie. All rights reserved.
 //
 
-struct NicePlace {
+struct NicePlace: Equatable {
 
     let title: String
     let imageUrl: String

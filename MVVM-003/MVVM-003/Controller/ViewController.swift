@@ -13,14 +13,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewIndicator: UIActivityIndicatorView!
 
+    let viewModel = MainVM()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupList()
+        fetchData()
+        observeData()
     }
 
     private func setupList() {
         tableView.delegate = self
         tableView.dataSource = self
+    }
+
+    private func fetchData() {
+        viewModel.fetchData()
+    }
+
+    private func observeData() {
+        viewModel.data.observe = { _ in
+            self.tableView.reloadData()
+        }
     }
 
     @IBAction func btnAddTapped(_ sender: Any) {
@@ -30,13 +44,13 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return viewModel.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.imageView?.image = UIImage(systemName: "photo")
-        cell.textLabel?.text = "Item \(indexPath.row)"
+        cell.imageView?.image = UIImage(systemName: viewModel.getImage(indexPath) ?? "")
+        cell.textLabel?.text = viewModel.getTitle(indexPath)
         return cell
     }
 }

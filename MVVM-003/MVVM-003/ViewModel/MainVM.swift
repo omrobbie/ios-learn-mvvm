@@ -6,11 +6,28 @@
 //  Copyright © 2020 omrobbie. All rights reserved.
 //
 
+import Foundation
+
 class MainVM {
 
-    var nicePlaces = [NicePlace]()
+    var data = Observable<[NicePlace]>()
 
-    func getNicePlaces() -> [NicePlace] {
-        return nicePlaces
+    var count: Int {
+        return data.property?.count ?? 0
+    }
+
+    func getTitle(_ indexPath: IndexPath) -> String? {
+        return data.property?[indexPath.row].title
+    }
+
+    func getImage(_ indexPath: IndexPath) -> String? {
+        return data.property?[indexPath.row].imageUrl
+    }
+
+    func fetchData() {
+        data.property = [
+            NicePlace(title: "Test 1", imageUrl: "photo"),
+            NicePlace(title: "Test 2", imageUrl: "person")
+        ]
     }
 }
