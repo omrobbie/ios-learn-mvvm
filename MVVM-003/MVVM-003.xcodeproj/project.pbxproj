@@ -13,6 +13,7 @@
 		FC5C64F324DB9B9700BE4C7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5C64F124DB9B9700BE4C7B /* Main.storyboard */; };
 		FC5C64F524DB9B9700BE4C7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5C64F424DB9B9700BE4C7B /* Assets.xcassets */; };
 		FC5C64F824DB9B9700BE4C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5C64F624DB9B9700BE4C7B /* LaunchScreen.storyboard */; };
+		FC5C650324DB9CEE00BE4C7B /* NicePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FC5C64F424DB9B9700BE4C7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC5C64F724DB9B9700BE4C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC5C64F924DB9B9700BE4C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicePlace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FC5C64EA24DB9B9700BE4C7B /* MVVM-003 */ = {
 			isa = PBXGroup;
 			children = (
+				FC5C650124DB9CE300BE4C7B /* Model */,
 				FC5C64FF24DB9CBB00BE4C7B /* View */,
 				FC5C650024DB9CC200BE4C7B /* Controller */,
 				FC5C64EB24DB9B9700BE4C7B /* AppDelegate.swift */,
@@ -81,6 +84,14 @@
 				FC5C64EF24DB9B9700BE4C7B /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC5C650124DB9CE300BE4C7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			files = (
 				FC5C64F024DB9B9700BE4C7B /* ViewController.swift in Sources */,
 				FC5C64EC24DB9B9700BE4C7B /* AppDelegate.swift in Sources */,
+				FC5C650324DB9CEE00BE4C7B /* NicePlace.swift in Sources */,
 				FC5C64EE24DB9B9700BE4C7B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
