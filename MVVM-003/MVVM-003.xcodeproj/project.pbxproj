@@ -14,6 +14,7 @@
 		FC5C64F524DB9B9700BE4C7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5C64F424DB9B9700BE4C7B /* Assets.xcassets */; };
 		FC5C64F824DB9B9700BE4C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5C64F624DB9B9700BE4C7B /* LaunchScreen.storyboard */; };
 		FC5C650324DB9CEE00BE4C7B /* NicePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */; };
+		FC5C650624DBA26500BE4C7B /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650524DBA26500BE4C7B /* MainVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FC5C64F724DB9B9700BE4C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC5C64F924DB9B9700BE4C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicePlace.swift; sourceTree = "<group>"; };
+		FC5C650524DBA26500BE4C7B /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5C650124DB9CE300BE4C7B /* Model */,
+				FC5C650424DBA24C00BE4C7B /* ViewModel */,
 				FC5C64FF24DB9CBB00BE4C7B /* View */,
 				FC5C650024DB9CC200BE4C7B /* Controller */,
 				FC5C64EB24DB9B9700BE4C7B /* AppDelegate.swift */,
@@ -92,6 +95,14 @@
 				FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FC5C650424DBA24C00BE4C7B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C650524DBA26500BE4C7B /* MainVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5C64F024DB9B9700BE4C7B /* ViewController.swift in Sources */,
+				FC5C650624DBA26500BE4C7B /* MainVM.swift in Sources */,
 				FC5C64EC24DB9B9700BE4C7B /* AppDelegate.swift in Sources */,
 				FC5C650324DB9CEE00BE4C7B /* NicePlace.swift in Sources */,
 				FC5C64EE24DB9B9700BE4C7B /* SceneDelegate.swift in Sources */,
