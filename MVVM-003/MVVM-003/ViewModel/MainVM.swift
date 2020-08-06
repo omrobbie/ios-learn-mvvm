@@ -33,9 +33,7 @@ class MainVM {
 
     func addNewValue(nicePlace: NicePlace) {
         isLoading.property = true
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.data.property?.append(nicePlace)
+        repo.addNewValue(nicePlace: nicePlace) {
             self.isLoading.property = false
         }
     }

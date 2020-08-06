@@ -22,4 +22,11 @@ class NicePlaceRepository {
 
         return nicePlaces
     }
+
+    func addNewValue(nicePlace: NicePlace, completion: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.nicePlaces.property?.append(nicePlace)
+            completion()
+        }
+    }
 }
