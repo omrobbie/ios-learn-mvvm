@@ -10,10 +10,16 @@ import Foundation
 
 class MainVM {
 
+    private var repo = NicePlaceRepository.shared
+
     var data = Observable<[NicePlace]>()
 
     var count: Int {
         return data.property?.count ?? 0
+    }
+
+    init() {
+        data = repo.fetchData()
     }
 
     func getTitle(_ indexPath: IndexPath) -> String? {
@@ -22,12 +28,5 @@ class MainVM {
 
     func getImage(_ indexPath: IndexPath) -> String? {
         return data.property?[indexPath.row].imageUrl
-    }
-
-    func fetchData() {
-        data.property = [
-            NicePlace(title: "Test 1", imageUrl: "photo"),
-            NicePlace(title: "Test 2", imageUrl: "person")
-        ]
     }
 }

@@ -18,17 +18,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupList()
-        fetchData()
         observeData()
     }
 
     private func setupList() {
         tableView.delegate = self
         tableView.dataSource = self
-    }
-
-    private func fetchData() {
-        viewModel.fetchData()
     }
 
     private func observeData() {

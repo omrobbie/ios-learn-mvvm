@@ -16,6 +16,7 @@
 		FC5C650324DB9CEE00BE4C7B /* NicePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */; };
 		FC5C650624DBA26500BE4C7B /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650524DBA26500BE4C7B /* MainVM.swift */; };
 		FC5C650924DBA37600BE4C7B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650824DBA37600BE4C7B /* Observable.swift */; };
+		FC5C650C24DBACBD00BE4C7B /* NicePlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C650B24DBACBD00BE4C7B /* NicePlaceRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FC5C650224DB9CEE00BE4C7B /* NicePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicePlace.swift; sourceTree = "<group>"; };
 		FC5C650524DBA26500BE4C7B /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 		FC5C650824DBA37600BE4C7B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		FC5C650B24DBACBD00BE4C7B /* NicePlaceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicePlaceRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				FC5C650124DB9CE300BE4C7B /* Model */,
 				FC5C650424DBA24C00BE4C7B /* ViewModel */,
+				FC5C650A24DBAC9500BE4C7B /* Repository */,
 				FC5C64FF24DB9CBB00BE4C7B /* View */,
 				FC5C650024DB9CC200BE4C7B /* Controller */,
 				FC5C650724DBA35A00BE4C7B /* Helpers */,
@@ -114,6 +117,14 @@
 				FC5C650824DBA37600BE4C7B /* Observable.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FC5C650A24DBAC9500BE4C7B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C650B24DBACBD00BE4C7B /* NicePlaceRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 			files = (
 				FC5C64F024DB9B9700BE4C7B /* ViewController.swift in Sources */,
 				FC5C650624DBA26500BE4C7B /* MainVM.swift in Sources */,
+				FC5C650C24DBACBD00BE4C7B /* NicePlaceRepository.swift in Sources */,
 				FC5C64EC24DB9B9700BE4C7B /* AppDelegate.swift in Sources */,
 				FC5C650324DB9CEE00BE4C7B /* NicePlace.swift in Sources */,
 				FC5C650924DBA37600BE4C7B /* Observable.swift in Sources */,
