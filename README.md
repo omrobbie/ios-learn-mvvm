@@ -10,6 +10,7 @@ Learn basic MVVM using static data to authenticate login by checking static user
 ### 2. Beginning Swift: Networking, Table Views, and MVVM
 Learn to use MVVM with API data. Was modified the example a bit to match my style.<br>
 * You can check the full tutorial [here](https://www.youtube.com/watch?v=npZALmBV66Q).<br>
+* And you can check the API source [here](https://itunes.apple.com/us/rss/topmovies/limit=25/json).<br>
 <img src="MVVM-002/screenshot/preview.png" width=256 />
 
 ### 3. Model View View-Model (MVVM): Getting Started
