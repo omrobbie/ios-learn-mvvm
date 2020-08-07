@@ -13,7 +13,13 @@ protocol Repository {
 
 class RepositoryImpl: Repository {
 
+    private var restApi: RestApi
+
+    init(restApi: RestApi) {
+        self.restApi = restApi
+    }
+
     func fetchData() {
-        // TODO: Get data from API
+        restApi.fetchData()
     }
 }

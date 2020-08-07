@@ -17,6 +17,7 @@
 		FC981D4424DD4882005F249D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC981D4324DD4882005F249D /* ViewModel.swift */; };
 		FC981D4624DD660C005F249D /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC981D4524DD660C005F249D /* UseCase.swift */; };
 		FC981D4C24DD9543005F249D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC981D4B24DD9543005F249D /* Repository.swift */; };
+		FC981D4E24DD9A77005F249D /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC981D4D24DD9A77005F249D /* RestApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FC981D4324DD4882005F249D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FC981D4524DD660C005F249D /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		FC981D4B24DD9543005F249D /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FC981D4D24DD9A77005F249D /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		FC981D3F24DD4658005F249D /* RestApi */ = {
 			isa = PBXGroup;
 			children = (
+				FC981D4D24DD9A77005F249D /* RestApi.swift */,
 			);
 			path = RestApi;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC981D4E24DD9A77005F249D /* RestApi.swift in Sources */,
 				FC981D4C24DD9543005F249D /* Repository.swift in Sources */,
 				FC981D4424DD4882005F249D /* ViewModel.swift in Sources */,
 				FC981D2724DD4594005F249D /* ViewController.swift in Sources */,
