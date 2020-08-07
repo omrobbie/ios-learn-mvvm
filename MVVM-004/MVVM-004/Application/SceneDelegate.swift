@@ -16,13 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
 
-        let restApi = RestApiImpl()
-        let repository = RepositoryImpl(restApi: restApi)
-        let useCase = UseCaseImpl(repository: repository)
-        let viewModel = ViewModel(useCase: useCase)
-        let viewController = ViewController.create(viewModel: viewModel)
+        let dependencyInjection = DependencyInjectionImpl()
 
-        window?.rootViewController = viewController
+        window?.rootViewController = dependencyInjection.startViewController()
         window?.makeKeyAndVisible()
     }
 }
