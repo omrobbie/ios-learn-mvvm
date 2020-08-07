@@ -13,7 +13,13 @@ protocol UseCase {
 
 class UseCaseImpl: UseCase {
 
+    private var repository: Repository
+
+    init(repository: Repository) {
+        self.repository = repository
+    }
+
     func fetchData() {
-        // TODO: Get data from API
+        repository.fetchData()
     }
 }
