@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var viewModel: ViewModel!
+
+    static func create(viewModel: ViewModel) -> UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController() as! ViewController
+
+        viewController.viewModel = viewModel
+        return viewController
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
