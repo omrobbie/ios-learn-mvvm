@@ -10,7 +10,13 @@ class ViewModel {
 
     var model = [ModelEntry]()
 
+    private var useCase: UseCase
+
+    init(useCase: UseCase) {
+        self.useCase = useCase
+    }
+
     func getTitleList() {
-        // TODO: Get data from API
+        useCase.fetchData()
     }
 }
