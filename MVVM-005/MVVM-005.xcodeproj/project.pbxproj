@@ -20,6 +20,7 @@
 		FC66DBA624DEB099000636AB /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DBA524DEB099000636AB /* UseCase.swift */; };
 		FC66DBA824DEB0D3000636AB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DBA724DEB0D3000636AB /* ViewModel.swift */; };
 		FC66DBAA24DEB697000636AB /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DBA924DEB697000636AB /* DependencyInjection.swift */; };
+		FC66DBAD24DECB25000636AB /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DBAC24DECB25000636AB /* DIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FC66DBA524DEB099000636AB /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		FC66DBA724DEB0D3000636AB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FC66DBA924DEB697000636AB /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		FC66DBAC24DECB25000636AB /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				FC66DB7D24DE771D000636AB /* AppDelegate.swift */,
 				FC66DB7F24DE771D000636AB /* SceneDelegate.swift */,
+				FC66DBAC24DECB25000636AB /* DIContainer.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			files = (
 				FC66DBA024DE7C33000636AB /* RestApi.swift in Sources */,
 				FC66DB8224DE771D000636AB /* ViewController.swift in Sources */,
+				FC66DBAD24DECB25000636AB /* DIContainer.swift in Sources */,
 				FC66DB7E24DE771D000636AB /* AppDelegate.swift in Sources */,
 				FC66DB8024DE771D000636AB /* SceneDelegate.swift in Sources */,
 				FC66DBA624DEB099000636AB /* UseCase.swift in Sources */,
