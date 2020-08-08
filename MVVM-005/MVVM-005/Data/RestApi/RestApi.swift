@@ -23,6 +23,7 @@ class RestApiImpl: RestApi {
         requestData(.get, BASE_URL)
             .flatMap { (data) -> Observable<[ModelEntry]> in
                 let decodeData = try JSONDecoder().decode(Model.self, from: data.1)
+                print(decodeData)
                 return Observable.just(decodeData.feed.entry)
         }
     }
