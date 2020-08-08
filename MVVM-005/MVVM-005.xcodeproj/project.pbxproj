@@ -19,6 +19,7 @@
 		FC66DBA224DEAF02000636AB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DBA124DEAF02000636AB /* Repository.swift */; };
 		FC66DBA624DEB099000636AB /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DBA524DEB099000636AB /* UseCase.swift */; };
 		FC66DBA824DEB0D3000636AB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DBA724DEB0D3000636AB /* ViewModel.swift */; };
+		FC66DBAA24DEB697000636AB /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DBA924DEB697000636AB /* DependencyInjection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FC66DBA124DEAF02000636AB /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		FC66DBA524DEB099000636AB /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		FC66DBA724DEB0D3000636AB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FC66DBA924DEB697000636AB /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				FC66DB9124DE7876000636AB /* Application */,
+				FC66DBAB24DEB7CC000636AB /* DependencyInjection */,
 				FC66DB9224DE788B000636AB /* Presentation */,
 				FC66DB9624DE78C3000636AB /* Domain */,
 				FC66DB9524DE78AA000636AB /* Data */,
@@ -184,6 +187,14 @@
 				FC66DBA124DEAF02000636AB /* Repository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		FC66DBAB24DEB7CC000636AB /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				FC66DBA924DEB697000636AB /* DependencyInjection.swift */,
+			);
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +317,7 @@
 				FC66DB7E24DE771D000636AB /* AppDelegate.swift in Sources */,
 				FC66DB8024DE771D000636AB /* SceneDelegate.swift in Sources */,
 				FC66DBA624DEB099000636AB /* UseCase.swift in Sources */,
+				FC66DBAA24DEB697000636AB /* DependencyInjection.swift in Sources */,
 				FC66DB9C24DE7938000636AB /* Model.swift in Sources */,
 				FC66DBA824DEB0D3000636AB /* ViewModel.swift in Sources */,
 				FC66DBA224DEAF02000636AB /* Repository.swift in Sources */,
