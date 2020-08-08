@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				E17721954F452FAC6964116C /* Pods-MVVM-005.debug.xcconfig */,
 				66258985AE7B40EAF4BF1149 /* Pods-MVVM-005.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +80,95 @@
 		FC66DB7C24DE771D000636AB /* MVVM-005 */ = {
 			isa = PBXGroup;
 			children = (
-				FC66DB7D24DE771D000636AB /* AppDelegate.swift */,
-				FC66DB7F24DE771D000636AB /* SceneDelegate.swift */,
-				FC66DB8124DE771D000636AB /* ViewController.swift */,
-				FC66DB8324DE771D000636AB /* Main.storyboard */,
+				FC66DB9124DE7876000636AB /* Application */,
+				FC66DB9224DE788B000636AB /* Presentation */,
+				FC66DB9624DE78C3000636AB /* Domain */,
+				FC66DB9524DE78AA000636AB /* Data */,
 				FC66DB8624DE771F000636AB /* Assets.xcassets */,
 				FC66DB8824DE771F000636AB /* LaunchScreen.storyboard */,
 				FC66DB8B24DE771F000636AB /* Info.plist */,
 			);
 			path = "MVVM-005";
+			sourceTree = "<group>";
+		};
+		FC66DB9124DE7876000636AB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FC66DB7D24DE771D000636AB /* AppDelegate.swift */,
+				FC66DB7F24DE771D000636AB /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FC66DB9224DE788B000636AB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FC66DB9424DE789F000636AB /* ViewModel */,
+				FC66DB9324DE7898000636AB /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FC66DB9324DE7898000636AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC66DB8324DE771D000636AB /* Main.storyboard */,
+				FC66DB8124DE771D000636AB /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC66DB9424DE789F000636AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC66DB9524DE78AA000636AB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FC66DB9A24DE78F3000636AB /* Repository */,
+				FC66DB9924DE78EA000636AB /* RestApi */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FC66DB9624DE78C3000636AB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FC66DB9724DE78D3000636AB /* Model */,
+				FC66DB9824DE78DE000636AB /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FC66DB9724DE78D3000636AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC66DB9824DE78DE000636AB /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		FC66DB9924DE78EA000636AB /* RestApi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RestApi;
+			sourceTree = "<group>";
+		};
+		FC66DB9A24DE78F3000636AB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
