@@ -20,3 +20,13 @@ Learn to use MVVM with Observable (not RxSwift by-the-way). Was modified the exa
 <img src="MVVM-003/screenshot/preview1.png" width=256 />&nbsp;
 <img src="MVVM-003/screenshot/preview2.png" width=256 />&nbsp;
 <img src="MVVM-003/screenshot/preview3.png" width=256 />&nbsp;
+
+### 4. MVVM with Clean Architecture 
+Learn to do separation on MVVM using Clean Architecture. There are 3 main layers, Presentation, Domain, and Data layers.
+1. Presentation. Contains the Views and ViewModels. The Presentation layer depends only on the Domain layer.
+2. Domain. Contains the Models (entities) and UseCases. The UseCase depends on what we need and might not include all repositories.
+3. Data. Contains the Repositories. The Repository is what we need to communicate with ReST API or local persistent data like CoreData or Realm. And The Data layer depends only on the Domain Layer.
+I was modified the example  to match my coding style.<br>
+* You can check the full article [here](https://tech.olx.com/clean-architecture-and-mvvm-on-ios-c9d167d9f5b3).<br>
+* And you can check the source-code [here](https://github.com/kudoleh/iOS-Clean-Architecture-MVVM).<br>
+<img src="MVVM-004/screenshot/preview.png" width=256 />
