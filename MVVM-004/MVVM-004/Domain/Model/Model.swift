@@ -6,22 +6,22 @@
 //  Copyright © 2020 omrobbie. All rights reserved.
 //
 
-struct Model: Decodable {
+struct Model: Decodable, Equatable {
 
     let feed: ModelFeed
 }
 
-struct ModelFeed: Decodable {
+struct ModelFeed: Decodable, Equatable {
 
     let entry: [ModelEntry]
 }
 
-struct ModelEntry: Decodable {
+struct ModelEntry: Decodable, Equatable {
 
     let title: ModelTitle
 }
 
-struct ModelTitle: Decodable {
+struct ModelTitle: Decodable, Equatable {
 
     let label: String
 }

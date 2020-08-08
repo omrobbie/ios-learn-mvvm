@@ -8,7 +8,7 @@
 
 protocol Repository {
 
-    func fetchData()
+    func fetchData() -> Observable<[ModelEntry]>
 }
 
 class RepositoryImpl: Repository {
@@ -19,7 +19,8 @@ class RepositoryImpl: Repository {
         self.restApi = restApi
     }
 
-    func fetchData() {
+    func fetchData() -> Observable<[ModelEntry]> {
         restApi.fetchData()
+        return restApi.observableModel
     }
 }

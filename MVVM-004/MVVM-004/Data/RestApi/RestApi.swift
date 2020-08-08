@@ -10,10 +10,14 @@ import Foundation
 
 protocol RestApi {
 
+    var observableModel: Observable<[ModelEntry]> {get}
+
     func fetchData()
 }
 
 class RestApiImpl: RestApi {
+
+    var observableModel: Observable<[ModelEntry]> = Observable<[ModelEntry]>()
 
     private let BASE_URL = "https://itunes.apple.com/us/rss/topmovies/limit=25/json"
 }
@@ -32,7 +36,7 @@ extension RestApiImpl {
             guard let data = data else {return}
             do {
                 let decodeData = try JSONDecoder().decode(Model.self, from: data)
-                print(decodeData)
+                self.observableModel.property = decodeData.feed.entry
             } catch {
                 print("Error", error.localizedDescription)
             }

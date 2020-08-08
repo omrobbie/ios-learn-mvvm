@@ -7,7 +7,7 @@
 //
 protocol ViewmModel {
 
-    func getTitleList()
+    func getTitleList() -> Observable<[ModelEntry]>
 }
 
 class ViewModelImpl: ViewmModel {
@@ -20,7 +20,7 @@ class ViewModelImpl: ViewmModel {
         self.useCase = useCase
     }
 
-    func getTitleList() {
+    func getTitleList() -> Observable<[ModelEntry]> {
         useCase.fetchData()
     }
 }

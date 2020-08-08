@@ -8,7 +8,7 @@
 
 protocol UseCase {
 
-    func fetchData()
+    func fetchData() -> Observable<[ModelEntry]>
 }
 
 class UseCaseImpl: UseCase {
@@ -19,7 +19,7 @@ class UseCaseImpl: UseCase {
         self.repository = repository
     }
 
-    func fetchData() {
+    func fetchData() -> Observable<[ModelEntry]> {
         repository.fetchData()
     }
 }

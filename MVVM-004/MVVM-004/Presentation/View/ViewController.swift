@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.getTitleList()
+        viewModel.getTitleList().observe = { data in
+            self.viewModel.model = data
+        }
     }
 }
