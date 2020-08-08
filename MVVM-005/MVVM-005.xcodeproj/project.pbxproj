@@ -14,6 +14,7 @@
 		FC66DB8524DE771D000636AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC66DB8324DE771D000636AB /* Main.storyboard */; };
 		FC66DB8724DE771F000636AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC66DB8624DE771F000636AB /* Assets.xcassets */; };
 		FC66DB8A24DE771F000636AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC66DB8824DE771F000636AB /* LaunchScreen.storyboard */; };
+		FC66DB9C24DE7938000636AB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DB9B24DE7938000636AB /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FC66DB8624DE771F000636AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC66DB8924DE771F000636AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC66DB8B24DE771F000636AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC66DB9B24DE7938000636AB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		FC66DB9724DE78D3000636AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC66DB9B24DE7938000636AB /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				FC66DB8224DE771D000636AB /* ViewController.swift in Sources */,
 				FC66DB7E24DE771D000636AB /* AppDelegate.swift in Sources */,
 				FC66DB8024DE771D000636AB /* SceneDelegate.swift in Sources */,
+				FC66DB9C24DE7938000636AB /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
