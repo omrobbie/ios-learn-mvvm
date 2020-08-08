@@ -16,6 +16,7 @@
 		FC66DB8A24DE771F000636AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC66DB8824DE771F000636AB /* LaunchScreen.storyboard */; };
 		FC66DB9C24DE7938000636AB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DB9B24DE7938000636AB /* Model.swift */; };
 		FC66DBA024DE7C33000636AB /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DB9F24DE7C33000636AB /* RestApi.swift */; };
+		FC66DBA224DEAF02000636AB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66DBA124DEAF02000636AB /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FC66DB8B24DE771F000636AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC66DB9B24DE7938000636AB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FC66DB9F24DE7C33000636AB /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
+		FC66DBA124DEAF02000636AB /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		FC66DB9A24DE78F3000636AB /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				FC66DBA124DEAF02000636AB /* Repository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				FC66DB7E24DE771D000636AB /* AppDelegate.swift in Sources */,
 				FC66DB8024DE771D000636AB /* SceneDelegate.swift in Sources */,
 				FC66DB9C24DE7938000636AB /* Model.swift in Sources */,
+				FC66DBA224DEAF02000636AB /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
