@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC33102B24DE15E2007B8940 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC33102A24DE15E2007B8940 /* DependencyInjection.swift */; };
+		FC33102E24DE482E007B8940 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC33102D24DE482E007B8940 /* Observable.swift */; };
 		FC981D2324DD4594005F249D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC981D2224DD4594005F249D /* AppDelegate.swift */; };
 		FC981D2524DD4594005F249D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC981D2424DD4594005F249D /* SceneDelegate.swift */; };
 		FC981D2724DD4594005F249D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC981D2624DD4594005F249D /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		FC33102A24DE15E2007B8940 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		FC33102D24DE482E007B8940 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		FC981D1F24DD4594005F249D /* MVVM-004.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-004.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC981D2224DD4594005F249D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC981D2424DD4594005F249D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC33102C24DE47FD007B8940 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC33102D24DE482E007B8940 /* Observable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FC981D1624DD4594005F249D = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 				FC981D3924DD45FC005F249D /* Presentation */,
 				FC981D3824DD45F8005F249D /* Domain */,
 				FC981D3724DD45F0005F249D /* Data */,
+				FC33102C24DE47FD007B8940 /* Helpers */,
 				FC981D2B24DD4595005F249D /* Assets.xcassets */,
 				FC981D2D24DD4595005F249D /* LaunchScreen.storyboard */,
 				FC981D3024DD4595005F249D /* Info.plist */,
@@ -250,6 +261,7 @@
 				FC981D2724DD4594005F249D /* ViewController.swift in Sources */,
 				FC981D2324DD4594005F249D /* AppDelegate.swift in Sources */,
 				FC33102B24DE15E2007B8940 /* DependencyInjection.swift in Sources */,
+				FC33102E24DE482E007B8940 /* Observable.swift in Sources */,
 				FC981D4624DD660C005F249D /* UseCase.swift in Sources */,
 				FC981D2524DD4594005F249D /* SceneDelegate.swift in Sources */,
 				FC981D4224DD47A1005F249D /* Model.swift in Sources */,
