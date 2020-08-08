@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var viewModel: ViewModel!
+    private var viewModel: ViewModelImpl!
 
-    static func create(viewModel: ViewModel) -> UIViewController {
+    static func create(viewModel: ViewModelImpl) -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateInitialViewController() as! ViewController
 

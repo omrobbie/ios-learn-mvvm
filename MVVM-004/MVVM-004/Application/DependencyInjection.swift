@@ -19,7 +19,7 @@ class DependencyInjectionImpl: DependencyInjection {
         let restApi = RestApiImpl()
         let repository = RepositoryImpl(restApi: restApi)
         let useCase = UseCaseImpl(repository: repository)
-        let viewModel = ViewModel(useCase: useCase)
+        let viewModel = ViewModelImpl(useCase: useCase)
         let viewController = ViewController.create(viewModel: viewModel)
 
         return viewController
