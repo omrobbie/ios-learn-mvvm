@@ -10,18 +10,23 @@ import RxSwift
 
 protocol ViewModel {
 
-    func getTitleList() -> Observable<[ModelEntry]>
+    func getTitleList()
 }
 
 class ViewModelImpl: ViewModel {
 
     private var useCase: UseCase
+    private var disposeBag = DisposeBag()
 
     init(useCase: UseCase) {
         self.useCase = useCase
     }
 
-    func getTitleList() -> Observable<[ModelEntry]> {
+    func getTitleList() {
         useCase.fetchData()
+            .subscribe(onNext: { (data) in
+                print(data)
+            })
+            .disposed(by: disposeBag)
     }
 }
