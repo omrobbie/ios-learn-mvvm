@@ -16,7 +16,6 @@ class ViewController: UIViewController {
 
     var viewModel: ViewModel!
 
-    private var data = [ModelEntry]()
     private var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
