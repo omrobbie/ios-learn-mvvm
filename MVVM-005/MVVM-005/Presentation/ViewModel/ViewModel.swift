@@ -7,13 +7,18 @@
 //
 
 import RxSwift
+import RxCocoa
 
 protocol ViewModel {
+
+    var data: PublishRelay<[ModelEntry]> {get}
 
     func getTitleList()
 }
 
 class ViewModelImpl: ViewModel {
+
+    var data: PublishRelay<[ModelEntry]> = PublishRelay<[ModelEntry]>()
 
     private var useCase: UseCase
     private var disposeBag = DisposeBag()
@@ -25,7 +30,7 @@ class ViewModelImpl: ViewModel {
     func getTitleList() {
         useCase.fetchData()
             .subscribe(onNext: { (data) in
-                print(data)
+                self.data.accept(data)
             })
             .disposed(by: disposeBag)
     }

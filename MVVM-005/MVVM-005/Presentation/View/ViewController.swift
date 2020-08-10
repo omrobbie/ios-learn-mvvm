@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
@@ -14,21 +16,34 @@ class ViewController: UIViewController {
 
     var viewModel: ViewModel!
 
+    private var data = [ModelEntry]()
+    private var disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.getTitleList()
+        setupObserver()
+    }
+
+    private func setupObserver() {
+        viewModel.data.subscribe(onNext: { (data) in
+            self.data = data
+            self.tableView.reloadData()
+        })
+        .disposed(by: disposeBag)
     }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return data.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Item \(indexPath.row)"
+        let item = data[indexPath.row]
+        cell.textLabel?.text = item.title.label
         return cell
     }
 }
