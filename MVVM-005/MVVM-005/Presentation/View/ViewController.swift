@@ -26,24 +26,8 @@ class ViewController: UIViewController {
     }
 
     private func setupObserver() {
-        viewModel.data.subscribe(onNext: { (data) in
-            self.data = data
-            self.tableView.reloadData()
-        })
-        .disposed(by: disposeBag)
-    }
-}
-
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        let item = data[indexPath.row]
-        cell.textLabel?.text = item.title.label
-        return cell
+        viewModel.data.bind(to: self.tableView.rx.items(cellIdentifier: "cell")) { (row, item, cell) in
+            cell.textLabel?.text = item.title.label
+        }.disposed(by: disposeBag)
     }
 }
