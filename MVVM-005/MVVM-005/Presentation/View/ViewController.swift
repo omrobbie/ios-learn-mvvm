@@ -10,16 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var viewModel: ViewModel!
-
-    init(viewModel: ViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
+    var viewModel: ViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

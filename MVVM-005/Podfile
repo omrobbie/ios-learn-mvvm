@@ -10,5 +10,6 @@ target 'MVVM-005' do
   pod 'RxCocoa'
   pod 'RxAlamofire'
   pod 'Swinject'
+  pod 'SwinjectStoryboard'
 
 end

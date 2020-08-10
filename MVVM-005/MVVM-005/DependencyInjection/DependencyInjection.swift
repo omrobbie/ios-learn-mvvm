@@ -6,10 +6,13 @@
 //  Copyright © 2020 omrobbie. All rights reserved.
 //
 
+import UIKit
 import Swinject
+import SwinjectStoryboard
 
-class DependencyInjection: Assembly {
-    func assemble(container: Container) {
+class DependencyInjection {
+
+    static let container = Container { container in
         container.register(RestApi.self) { (resolver) in
             RestApiImpl()
         }
@@ -28,10 +31,15 @@ class DependencyInjection: Assembly {
             let useCase = resolver.resolve(UseCase.self)!
             return ViewModelImpl(useCase: useCase)
         }
+    }
 
-        container.register(ViewController.self) { (resolver) in
-            let viewModel = resolver.resolve(ViewModel.self)!
-            return ViewController(viewModel: viewModel)
+    static func rootViewController() -> UIViewController {
+        let container = DependencyInjection.container
+        container.storyboardInitCompleted(ViewController.self) { (resolver, c) in
+            c.viewModel = resolver.resolve(ViewModel.self)
         }
+        let storyboard = SwinjectStoryboard.create(name: "Main", bundle: nil, container: container)
+
+        return storyboard.instantiateInitialViewController()!
     }
 }
