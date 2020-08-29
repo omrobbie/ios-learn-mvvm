@@ -19,6 +19,7 @@
 		FC31C2C424FA084400192A83 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31C2C324FA084400192A83 /* Restaurant.swift */; };
 		FC31C2C724FA08FD00192A83 /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31C2C624FA08FD00192A83 /* RestaurantService.swift */; };
 		FC31C2CA24FA0BEB00192A83 /* RestaurantsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31C2C924FA0BEB00192A83 /* RestaurantsListViewModel.swift */; };
+		FC31C2CC24FA0F4500192A83 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31C2CB24FA0F4500192A83 /* RestaurantViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FC31C2C324FA084400192A83 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		FC31C2C624FA08FD00192A83 /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
 		FC31C2C924FA0BEB00192A83 /* RestaurantsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListViewModel.swift; sourceTree = "<group>"; };
+		FC31C2CB24FA0F4500192A83 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FC31C2C924FA0BEB00192A83 /* RestaurantsListViewModel.swift */,
+				FC31C2CB24FA0F4500192A83 /* RestaurantViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC31C2C424FA084400192A83 /* Restaurant.swift in Sources */,
+				FC31C2CC24FA0F4500192A83 /* RestaurantViewModel.swift in Sources */,
 				FC31C2BE24FA042F00192A83 /* AppCoordinator.swift in Sources */,
 				FC31C2A824FA00D100192A83 /* ViewController.swift in Sources */,
 				FC31C2A424FA00D100192A83 /* AppDelegate.swift in Sources */,
