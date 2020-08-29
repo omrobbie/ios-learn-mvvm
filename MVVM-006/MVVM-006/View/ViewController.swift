@@ -26,10 +26,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        setupList()
     }
 
-    private func loadData() {
+    private func setupList() {
+        tableView.tableFooterView = UIView()
+
         viewModel.fetchRestaurantViewModels().bind(to: tableView.rx.items(cellIdentifier: "cell")) { index, viewModel, cell in
             cell.textLabel?.text = viewModel.displayText
         }.disposed(by: disposeBag)
