@@ -11,13 +11,15 @@ import RxSwift
 
 class ViewController: UIViewController {
 
-    static func instantiate() -> ViewController {
+    static func instantiate(viewModel: RestaurantsListViewModel) -> ViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
         let viewController = storyboard.instantiateInitialViewController() as! ViewController
+        viewController.viewModel = viewModel
         return viewController
     }
 
-    let disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
+    private var viewModel: RestaurantsListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +27,6 @@ class ViewController: UIViewController {
     }
 
     private func loadData() {
-        let service = RestaurantService()
-        service.fetchRestaurants().subscribe(onNext: { (restaurants) in
-            print(restaurants)
-        }).disposed(by: disposeBag)
+        viewModel.fetchRestaurantViewModels()
     }
 }
