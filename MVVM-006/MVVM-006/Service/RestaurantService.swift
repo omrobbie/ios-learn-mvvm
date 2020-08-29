@@ -6,10 +6,13 @@
 //  Copyright © 2020 omrobbie. All rights reserved.
 //
 
-import Foundation
 import RxSwift
 
-class RestaurantService {
+protocol RestaurantServiceProtocol {
+    func fetchRestaurants() -> Observable<[Restaurant]>
+}
+
+class RestaurantService: RestaurantServiceProtocol {
     func fetchRestaurants() -> Observable<[Restaurant]> {
         return Observable.create { (observer) -> Disposable in
             guard let path = Bundle.main.path(forResource: "restaurants", ofType: "json") else {
