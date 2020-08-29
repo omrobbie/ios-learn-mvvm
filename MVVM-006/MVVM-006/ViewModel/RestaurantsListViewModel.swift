@@ -11,9 +11,9 @@ import RxSwift
 final class RestaurantsListViewModel {
     let title = "Restaurants"
 
-    private let restaurantService: RestaurantService
+    private let restaurantService: RestaurantServiceProtocol
 
-    init(restaurantService: RestaurantService) {
+    init(restaurantService: RestaurantServiceProtocol) {
         self.restaurantService = restaurantService
     }
 

@@ -11,6 +11,7 @@ enum Cuisine: String, Decodable {
     case indian
     case french
     case english
+    case mexican
 }
 
 struct Restaurant: Decodable {
