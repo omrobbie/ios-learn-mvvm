@@ -37,6 +37,7 @@ class ViewController: UIViewController {
 
     private func setupList() {
         tableView.tableFooterView = UIView()
+        tableView.contentInsetAdjustmentBehavior = .never
 
         viewModel.fetchRestaurantViewModels().bind(to: tableView.rx.items(cellIdentifier: "cell")) { index, viewModel, cell in
             cell.textLabel?.text = viewModel.displayText
