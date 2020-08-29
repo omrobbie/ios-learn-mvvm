@@ -83,8 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				FC31C2BC24FA041300192A83 /* Application */,
-				FC31C2A724FA00D100192A83 /* ViewController.swift */,
-				FC31C2A924FA00D100192A83 /* Main.storyboard */,
+				FC31C2C024FA072300192A83 /* Model */,
+				FC31C2BF24FA071900192A83 /* View */,
 				FC31C2B924FA037600192A83 /* Base */,
 			);
 			path = "MVVM-006";
@@ -108,6 +108,22 @@
 				FC31C2BD24FA042F00192A83 /* AppCoordinator.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		FC31C2BF24FA071900192A83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC31C2A724FA00D100192A83 /* ViewController.swift */,
+				FC31C2A924FA00D100192A83 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC31C2C024FA072300192A83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
