@@ -6,14 +6,14 @@
 //  Copyright © 2020 omrobbie. All rights reserved.
 //
 
-enum Cuisine {
+enum Cuisine: String, Decodable {
     case european
     case indian
     case french
     case english
 }
 
-struct Restaurant {
+struct Restaurant: Decodable {
     let name: String
     let cuisine: Cuisine
 }

@@ -17,6 +17,7 @@
 		FC31C2BE24FA042F00192A83 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31C2BD24FA042F00192A83 /* AppCoordinator.swift */; };
 		FC31C2C224FA077000192A83 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = FC31C2C124FA077000192A83 /* restaurants.json */; };
 		FC31C2C424FA084400192A83 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31C2C324FA084400192A83 /* Restaurant.swift */; };
+		FC31C2C724FA08FD00192A83 /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31C2C624FA08FD00192A83 /* RestaurantService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FC31C2BD24FA042F00192A83 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FC31C2C124FA077000192A83 /* restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
 		FC31C2C324FA084400192A83 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		FC31C2C624FA08FD00192A83 /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				FC31C2BC24FA041300192A83 /* Application */,
 				FC31C2C024FA072300192A83 /* Model */,
 				FC31C2BF24FA071900192A83 /* View */,
+				FC31C2C524FA08E800192A83 /* Service */,
 				FC31C2B924FA037600192A83 /* Base */,
 			);
 			path = "MVVM-006";
@@ -130,6 +133,14 @@
 				FC31C2C324FA084400192A83 /* Restaurant.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FC31C2C524FA08E800192A83 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FC31C2C624FA08FD00192A83 /* RestaurantService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +263,7 @@
 				FC31C2BE24FA042F00192A83 /* AppCoordinator.swift in Sources */,
 				FC31C2A824FA00D100192A83 /* ViewController.swift in Sources */,
 				FC31C2A424FA00D100192A83 /* AppDelegate.swift in Sources */,
+				FC31C2C724FA08FD00192A83 /* RestaurantService.swift in Sources */,
 				FC31C2A624FA00D100192A83 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
