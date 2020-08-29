@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         return viewController
     }
 
+    @IBOutlet weak var tableView: UITableView!
+
     private let disposeBag = DisposeBag()
     private var viewModel: RestaurantsListViewModel!
 
