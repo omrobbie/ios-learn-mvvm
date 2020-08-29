@@ -16,7 +16,7 @@ class AppCoordinator {
     }
 
     func start() {
-        let viewController = ViewController()
+        let viewController = ViewController.instantiate()
         let navigationController = UINavigationController(rootViewController: viewController)
 
         window.rootViewController = navigationController
