@@ -36,3 +36,9 @@ Learn to use the power of RxSwift, RxCocoa, RxAlamofire, even Swinject and Swinj
 * You can check Swinject documentation [here](https://github.com/Swinject/Swinject)
 * And you can also check the SwinjectStoryboard [here](https://github.com/Swinject/SwinjectStoryboard).
 <img src="MVVM-005/screenshot/preview.png" width=256 />
+
+
+### 6. MVVM RxSwift Practical Example App
+Learn to use the power of RxSwift, RxCocoa, and ceate app coordinator.
+* You can check the full tutorial [here](https://www.youtube.com/watch?v=Dentp0JUbyI&list=PLLvVbXNzMjktXQKfgVv3L_iyRWINJ8cKr)
+<img src="MVVM-006/screenshot/preview.png" width=256 />
