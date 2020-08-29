@@ -10,4 +10,10 @@ import RxSwift
 
 final class RestaurantsListViewModel {
     let title = "Restaurants"
+
+    private let restaurantService: RestaurantService
+
+    init(restaurantService: RestaurantService) {
+        self.restaurantService = restaurantService
+    }
 }
