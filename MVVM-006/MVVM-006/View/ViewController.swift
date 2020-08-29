@@ -26,7 +26,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupHeader()
         setupList()
+    }
+
+    private func setupHeader() {
+        navigationItem.title = viewModel.title
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     private func setupList() {
