@@ -80,15 +80,23 @@
 		FC31C2A224FA00D100192A83 /* MVVM-006 */ = {
 			isa = PBXGroup;
 			children = (
-				FC31C2A324FA00D100192A83 /* AppDelegate.swift */,
-				FC31C2A524FA00D100192A83 /* SceneDelegate.swift */,
 				FC31C2A724FA00D100192A83 /* ViewController.swift */,
 				FC31C2A924FA00D100192A83 /* Main.storyboard */,
+				FC31C2B924FA037600192A83 /* Base */,
+			);
+			path = "MVVM-006";
+			sourceTree = "<group>";
+		};
+		FC31C2B924FA037600192A83 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FC31C2A324FA00D100192A83 /* AppDelegate.swift */,
+				FC31C2A524FA00D100192A83 /* SceneDelegate.swift */,
 				FC31C2AC24FA00D200192A83 /* Assets.xcassets */,
 				FC31C2AE24FA00D200192A83 /* LaunchScreen.storyboard */,
 				FC31C2B124FA00D300192A83 /* Info.plist */,
 			);
-			path = "MVVM-006";
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,7 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVVM-006/Info.plist";
+				INFOPLIST_FILE = "MVVM-006/Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVVM-006/Info.plist";
+				INFOPLIST_FILE = "MVVM-006/Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
