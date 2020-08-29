@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
@@ -29,6 +30,8 @@ class ViewController: UIViewController {
     }
 
     private func loadData() {
-        viewModel.fetchRestaurantViewModels()
+        viewModel.fetchRestaurantViewModels().bind(to: tableView.rx.items(cellIdentifier: "cell")) { index, viewModel, cell in
+            cell.textLabel?.text = viewModel.displayText
+        }.disposed(by: disposeBag)
     }
 }
